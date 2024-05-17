@@ -2,3 +2,26 @@
     margin: 0;
     padding: 0;
 }
+html{
+    height: 100vh;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5%;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    height: 100vh;
+}
+.sidebar{
+    grid-row:1/5;
+    background-color: #06b6d4;
+}
+.header{
+    grid-column: 2/6;
+    background-color: #fafaf9;
+}
+.content{
+    grid-row: 2/5;
+    grid-column: 2/6;
+    background-color: #d4d4d4;
+}
