@@ -8,20 +8,34 @@ html{
 .container{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 5%;
     grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
     height: 100vh;
 }
 .sidebar{
     grid-row:1/5;
     background-color: #06b6d4;
+    display: grid;
+    grid-template-rows: 0.5fr repeat(5,0.25fr) 0.25fr repeat(3,0.25fr) 2fr;
+    color: white;
+    justify-content: center;
 }
 .header{
-    grid-column: 2/6;
+    grid-column: 2/10;
     background-color: #fafaf9;
 }
 .content{
     grid-row: 2/5;
-    grid-column: 2/6;
+    grid-column: 2/10;
     background-color: #d4d4d4;
+
+}
+.sidebarFirst{
+  display: contents;
+}
+.sidebarSecond{
+  display: contents;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
