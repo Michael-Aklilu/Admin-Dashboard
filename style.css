@@ -190,5 +190,16 @@ button#third{
     border-radius: 1em;
     padding: 2em;
     display: grid;
+}
+.content #trending{
+    grid-column: 10/13;
+    grid-row: 5/8;
+    display: grid;
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em;
+}
+#trending h2{
+    justify-self: center;
 
 }
