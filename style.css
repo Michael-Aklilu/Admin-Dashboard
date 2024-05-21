@@ -25,6 +25,7 @@ html{
     background-color: #fafaf9;
     grid-template-rows: 1fr 1fr;
     display: grid;
+    height: fit-content;
 }
 .content{
     grid-row: 2/5;
@@ -50,7 +51,7 @@ h1 img{
 }
 .headerFirst{
     display: grid;
-    grid-template-columns: 0.25fr 2fr repeat(2, 0.5fr) 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
@@ -58,13 +59,55 @@ h1 img{
 .headerSecond{
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    align-items: center;
+    justify-items: center;
 }
-.header img{
+.headerFirst img{
     height: 2em;
 }
 .header input{
     height: 2em;
     width: -webkit-fill-available;
     border-style: revert-layer;
-
+    grid-column: 2 / 9;
+}
+.name{
+    grid-column: 13 / 17;
+    font-size: 2em;
+}
+#bell{
+    grid-column: 12/13;
+}
+#userIcon{
+    grid-column: 11/12;
+}
+#headerText{
+    grid-column: 2/5;
+}
+#secondText{
+    font-size: 1.5em;
+}
+img{
+    height: 5em;
+}
+#space{
+    grid-column: 5/10; 
+}
+button{
+    height: 3em;
+    width: -webkit-fill-available;
+    color:white;
+    background-color: #06b6d4;
+    border-radius: 2em;
+    border-style: none;
+}
+button#first{
+    grid-column: 10/11;
+}
+button#second{
+    grid-column: 12/13;
+}
+button#third{
+    grid-column: 14/15;
 }
