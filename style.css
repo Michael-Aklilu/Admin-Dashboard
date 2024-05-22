@@ -1,6 +1,12 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/home/mikiaklilu/repos/Admin-Dashboard/Font/Roboto-Bold.ttf");
+}
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Roboto",sans-serif;
 }
 
 .container{
@@ -24,6 +30,8 @@
     grid-template-rows: 1fr 1fr;
     display: grid;
     height: fit-content;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 .content{
     display: grid;
@@ -34,20 +42,30 @@
     background-color: #d4d4d4;
     padding: 2em;
     gap: 2em;
+    margin-top: 5px;
 
 }
 .sidebarFirst{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     gap: 2em;
     margin-bottom: 3em;
+    margin-left: 3em;
 }
 .sidebarSecond{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     gap: 2em;
+    margin-left: 3em;
+}
+.sidebar h2{
+    display:flex;
+    align-items: center;
+}
+.sidebar img{
+    height: 2em;
 }
 a{
     color: white;
@@ -56,8 +74,8 @@ a{
 
 h1 img{
     height: 1em;
-    background-color: white;
     margin-right: 5px;
+
 }
 .headerFirst{
     display: grid;
@@ -85,14 +103,14 @@ h1 img{
     border-radius: 2em;
 }
 .name{
-    grid-column: 13 / 17;
+    grid-column: 13 / 18;
     font-size: 2em;
 }
 #bell{
     grid-column: 12/13;
 }
 #userIcon{
-    grid-column: 11/12;
+    grid-column: 10/11;
 }
 #headerText{
     grid-column: 3/6;
@@ -113,6 +131,7 @@ button{
     background-color: #06b6d4;
     border-radius: 2em;
     border-style: none;
+    font-size: 1em;
 }
 button#first{
     grid-column: 10/11;
@@ -138,6 +157,7 @@ button#third{
     border-radius: 1em;
     padding: 2em;
     display: grid;
+    border: solid #06b6d4;
 }
 .content img{
     height: 1.5em;
@@ -156,7 +176,7 @@ button#third{
     border-radius: 1em;
     padding: 2em;
     display: grid;
-
+    border: solid #06b6d4;
 }
 .content #announcements{
     grid-column: 10/13;
@@ -165,6 +185,7 @@ button#third{
     border-radius: 1em;
     padding: 2em;
     display: grid;
+    border: solid #06b6d4;
 }
 .content #Impossible{
     grid-column: 1/5;
@@ -173,6 +194,7 @@ button#third{
     border-radius: 1em;
     padding: 2em;
     display: grid;
+    border: solid #06b6d4;
 }
 .content #easy{
     grid-column: 5/10;
@@ -181,6 +203,7 @@ button#third{
     border-radius: 1em;
     padding: 2em;
     display: grid;
+    border: solid #06b6d4;
 }
 .content #ad{
     grid-column: 1/5;
@@ -189,6 +212,7 @@ button#third{
     border-radius: 1em;
     padding: 2em;
     display: grid;
+    border: solid #06b6d4;
 }
 .content #money{
     grid-column: 5/10;
@@ -197,6 +221,7 @@ button#third{
     border-radius: 1em;
     padding: 2em;
     display: grid;
+    border: solid #06b6d4;
 }
 #users{
     grid-column: 10/13;
@@ -206,6 +231,7 @@ button#third{
     border-radius: 1em;
     padding: 2em;
     flex-direction: column;
+    border: solid #06b6d4;
 }
 #trending{
     justify-self: center;
@@ -225,4 +251,12 @@ button#third{
 .description{
     display: flex;
     justify-content: center;
+    color: grey;
+}
+p{
+    color: grey;
+}
+.sidebar h1{
+    display: flex;
+    margin-left: 0.5em;
 }
